@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>shopdetails</title>
+  <link rel="stylesheet" href="./shopfruitables.css">
+  <link rel="stylesheet" href="./fruitablesheader.css">
+  <link rel="stylesheet" href="./footerfordruitables.css">
+  
+</head>
+<script src="https://kit.fontawesome.com/cae5a42bd1.js" crossorigin="anonymous"></script>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="left">
+      <i class="fas fa-map-marker-alt"></i> 123 Street, New York
+      <i class="fas fa-envelope"></i> Email@example.com
+    </div>
+    <div class="right">
+      <a href="#">Privacy Policy</a> / 
+      <a href="#">Terms of Use</a> / 
+      <a href="#">Sales & Refunds</a>
+    </div>
+  </div>
+
+
+  <header class="navbar">
+    <div class="logo">ORGANIC</div>
+    <nav>
+      <ul>
+        <li><a href="./fruitables2.html">Home</a></li>
+        <li><a class="active" href="./shopfruitable.html">Shop</a></li>
+        <li><a href="./fruitablesshopdetails.html">Shop Detail</a></li>
+        <li><a href="#">Pages</a></li>
+        <li><a href="./contactpagefruitables.html">Contact</li></a>
+      </ul>
+    </nav>
+    <div class="icons">
+      <i class="fas fa-search"></i>
+      <i class="fas fa-shopping-bag"></i>
+     <a href="./frutableslogin.html"> <i class="fas fa-user"></i></a>
+    </div>
+  </header>
+
+
+<!-- Shop Banner -->
+<section class="shop-banner">
+  <h1>Welcome to Our Shop</h1>
+  <p>Find fresh and organic fruits & vegetables at the best prices</p>
+</section>
+
+<!-- Filter + Product Layout -->
+<div class="container">
+  <aside class="sidebar">
+    <h2>Fresh fruits shop</h2>
+    <div class="search-box">
+      <input type="text" placeholder="keywords">
+      <button><i class="fas fa-search"></i></button>
+    </div>
+
+    <h3>Categories</h3>
+    <ul class="categories">
+      <li><i class="fas fa-apple-alt"></i> Apples <span>(3)</span></li>
+      <li><i class="fas fa-apple-alt"></i> Oranges <span>(5)</span></li>
+      <li><i class="fas fa-apple-alt"></i> Strawbery <span>(2)</span></li>
+      <li><i class="fas fa-apple-alt"></i> Banana <span>(8)</span></li>
+      <li><i class="fas fa-apple-alt"></i> Pumpkin <span>(5)</span></li>
+    </ul>
+
+    <h3>Price</h3>
+    <input type="range" min="0" max="100" value="0">
+    <span>0</span>
+    <h3>Additional</h3>
+<ul class="filter-options">
+  <li><input type="radio" name="filter"> Organic</li>
+  <li><input type="radio" name="filter"> Fresh</li>
+  <li><input type="radio" name="filter"> Sales</li>
+  <li><input type="radio" name="filter"> Discount</li>
+  <li><input type="radio" name="filter"> Expired</li>
+</ul>
+
+<h3>Featured products</h3>
+<div class="featured-products">
+  <div class="featured-item">
+    <img src="https://up.yimg.com/ib/th/id/OIP.74L1tQJeO5RJeCqyLFyWPAHaFb?pid=Api&rs=1&c=1&qlt=95&w=143&h=104" alt="Big Banana">
+    <div>
+      <h4>Big Banana</h4>
+      <div class="stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <div class="price">
+        <span class="new">$2.99</span>
+        <span class="old">$4.11</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="featured-item">
+    <img src="https://sp.yimg.com/ib/th/id/OIP.tHNzJ-rlUakK_oIoVG1KVwHaLH?pid=Api&w=148&h=148&c=7&dpr=2&rs=1" alt="Strawberry">
+    <div>
+      <h4>Strawberry</h4>
+      <div class="stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <div class="price">
+        <span class="new">$2.99</span>
+        <span class="old">$4.11</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="featured-item">
+    <img src="https://up.yimg.com/ib/th/id/OIP.oGDVrT9qO2ibxIilyUQDhQHaFW?pid=Api&rs=1&c=1&qlt=95&w=153&h=111" alt="Broccoli">
+    <div>
+      <h4>Broccoli</h4>
+      <div class="stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <div class="price">
+        <span class="new">$2.99</span>
+        <span class="old">$4.11</span>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<div class="btn">
+  <button class="button">View More</button>
+</div>
+<div class="fresh-fruits-banner">
+  <img src="https://themewagon.github.io/fruitables/img/banner-fruits.jpg" alt="Fresh Fruits Banner" />
+  <div class="banner-text">
+    <p>Fresh<br>Fruits<br>Banner</p>
+  </div>
+</div>
+  </aside>
+  <main class="main-content">
+    <div class="top-bar">
+      <label for="sort">Default Sorting:</label>
+      <select id="sort">
+        <option value="nothing">Nothing</option>
+      </select>
+    </div>
+
+    <section class="product-items-container">
+      <div class="items-container">
+        <div class="banner">Fruits</div>
+        <div class="image-container"><img src="https://tse3.mm.bing.net/th/id/OIP.wuQ2oYTn7oIr3E2FmUvsYgHaEK?pid=Api&P=0&h=180" alt="Banana"></div>
+        <div class="Description">
+          <div class="title">musk-melon</div>
+          <div class="About">Naturally sweet bananas ideal for energy and digestion.</div>
+        </div>
+        <div class="cta-container">
+          <div class="price">$30/kg</div>
+          <button><i class="fas fa-shopping-bag"></i> Add to cart</button>
+        </div>
+      </div>
+
+      <div class="items-container">
+        <div class="banner">Fruits</div>
+        <div class="image-container"><img src="https://tse3.mm.bing.net/th/id/OIP.wuQ2oYTn7oIr3E2FmUvsYgHaEK?pid=Api&P=0&h=180" alt="Mangoes"></div>
+        <div class="Description">
+          <div class="title">Watermelon</div>
+          <div class="About">Juicy and tropical mangoes bursting with flavor.</div>
+        </div>
+        <div class="cta-container">
+          <div class="price">$75/kg</div>
+          <button><i class="fas fa-shopping-bag"></i> Add to cart</button>
+        </div>
+      </div>
+
+      <div class="items-container">
+        <div class="banner">Fruits</div>
+        <div class="image-container"><img src="https://tse3.mm.bing.net/th/id/OIP.wuQ2oYTn7oIr3E2FmUvsYgHaEK?pid=Api&P=0&h=180" alt="Mangoes"></div>
+        <div class="Description">
+          <div class="title">Mangoes</div>
+          <div class="About">Juicy and tropical mangoes bursting with flavor.</div>
+        </div>
+        <div class="cta-container">
+          <div class="price">$75/kg</div>
+          <button><i class="fas fa-shopping-bag"></i> Add to cart</button>
+        </div>
+      </div>
+
+      <div class="items-container">
+        <div class="banner">Fruits</div>
+        <div class="image-container"><img src="https://tse3.mm.bing.net/th/id/OIP.wuQ2oYTn7oIr3E2FmUvsYgHaEK?pid=Api&P=0&h=180" alt="Mangoes"></div>
+        <div class="Description">
+          <div class="title">Banana</div>
+          <div class="About">Juicy and tropical mangoes bursting with flavor.</div>
+        </div>
+        <div class="cta-container">
+          <div class="price">$75/kg</div>
+          <button><i class="fas fa-shopping-bag"></i> Add to cart</button>
+        </div>
+      </div>
+      <div class="items-container">
+        <div class="banner">Fruits</div>
+        <div class="image-container"><img src="https://tse3.mm.bing.net/th/id/OIP.wuQ2oYTn7oIr3E2FmUvsYgHaEK?pid=Api&P=0&h=180" alt="Mangoes"></div>
+        <div class="Description">
+          <div class="title">Pappayya</div>
+          <div class="About">Juicy and tropical mangoes bursting with flavor.</div>
+        </div>
+        <div class="cta-container">
+          <div class="price">$75/kg</div>
+          <button><i class="fas fa-shopping-bag"></i> Add to cart</button>
+        </div>
+      </div>
+
+      <div class="items-container">
+        <div class="banner">Fruits</div>
+        <div class="image-container"><img src="https://tse3.mm.bing.net/th/id/OIP.wuQ2oYTn7oIr3E2FmUvsYgHaEK?pid=Api&P=0&h=180" alt="Mangoes"></div>
+        <div class="Description">
+          <div class="title">kiwi</div>
+          <div class="About">Juicy and tropical mangoes bursting with flavor.</div>
+        </div>
+        <div class="cta-container">
+          <div class="price">$75/kg</div>
+          <button><i class="fas fa-shopping-bag"></i> Add to cart</button>
+        </div>
+      </div>
+
+      <div class="items-container">
+        <div class="banner">Fruits</div>
+        <div class="image-container"><img src="https://tse3.mm.bing.net/th/id/OIP.wuQ2oYTn7oIr3E2FmUvsYgHaEK?pid=Api&P=0&h=180" alt="Mangoes"></div>
+        <div class="Description">
+          <div class="title">Mangoes</div>
+          <div class="About">Juicy and tropical mangoes bursting with flavor.</div>
+        </div>
+        <div class="cta-container">
+          <div class="price">$75/kg</div>
+          <button><i class="fas fa-shopping-bag"></i> Add to cart</button>
+        </div>
+      </div>
+
+      <div class="items-container">
+        <div class="banner">promagante</div>
+        <div class="image-container"><img src="https://tse3.mm.bing.net/th/id/OIP.wuQ2oYTn7oIr3E2FmUvsYgHaEK?pid=Api&P=0&h=180" alt="Mangoes"></div>
+        <div class="Description">
+          <div class="title">promagante</div>
+          <div class="About">Juicy and tropical mangoes bursting with flavor.</div>
+        </div>
+        <div class="cta-container">
+          <div class="price">$75/kg</div>
+          <button><i class="fas fa-shopping-bag"></i> Add to cart</button>
+        </div>
+      </div>
+      <div class="items-container">
+        <div class="banner">Vegetable</div>
+        <div class="image-container"><img src="https://tse3.mm.bing.net/th/id/OIP.wuQ2oYTn7oIr3E2FmUvsYgHaEK?pid=Api&P=0&h=180" alt="Bell Pepper"></div>
+        <div class="Description">
+          <div class="title">custard-apple</div>
+          <div class="About">Colorful and crunchy, perfect for salads or stir fry.</div>
+        </div>
+        <div class="cta-container">
+          <div class="price">$40/kg</div>
+          <button><i class="fas fa-shopping-bag"></i> Add to cart</button>
+        </div>
+      </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <div class="pagination">
+      <button>&laquo;</button>
+      <button class="active">1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>&raquo;</button>
+    </div>
+  </main>
+</div>
+<!-- Footer (same as index) -->
+<footer>
+  <div class="footer-top">
+    <input type="email" placeholder="Your Email" />
+    <button>Subscribe Now</button>
+  </div>
+  <div class="footer-cols">
+    <div>
+      <h3>Fruitables</h3>
+      <p>Fresh products</p>
+    </div>
+    <div>
+      <h4>Shop Info</h4>
+      <p>About Us</p>
+      <p>Contact Us</p>
+      <p>Privacy Policy</p>
+    </div>
+    <div>
+      <h4>Account</h4>
+      <p>My Account</p>
+      <p>Wishlist</p>
+      <p>Shopping Cart</p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>Email: example@gmail.com</p>
+      <p>Phone: +0123 4567 8910</p>
+    </div>
+  </div>
+  <p class="copyright">
+    &copy; 2025 PurePluck Fruitables. All rights reserved.
+  </p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,249 @@
+:root {
+  --secondary-color: #7bb32e;
+   --font-color:#FFB524;
+   --primary-color: whitesmoke;
+}
+.contact{
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color:whitesmoke;
+}
+.call{
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+.getintouch{
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 100px;
+    font-weight:500;
+    color: var(--secondary-color)
+}
+.getintouchdes{
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    padding-top: 50px;
+}
+.download{
+    text-align: center;
+    padding-top: 50px;
+}
+.download button {
+  padding: 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download button:hover {
+  background-color: darkgreen;
+}
+
+.maps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: #f9f9f9; 
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.map-container {
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+  border-radius: 10px;
+  overflow: hidden;
+}
+.add{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: whitesmoke;
+    
+    width: 100%;
+
+}
+.name input,.email input,.message input,.submit input{
+    font-size: 20px;
+    width: 80%;
+    height: 60%;
+    border-color:var(--font-color);
+    padding: 5px;
+    
+    
+
+}
+.submit input{
+    background-color: #7bb32e;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    transform: translatex(3%);
+    cursor: pointer;
+    
+    
+}
+
+.submit .red::placeholder {
+  color: yellow;
+  font-size: 20px;
+  font-weight: 800;
+  cursor: pointer;
+}
+.address{
+    width: 40%;
+  
+    margin-left: 100px;
+}
+.address2{
+    width: 40%;
+    margin-right: 40px;
+    margin-bottom:60px;
+    gap: 20px;
+    background-color: #f9f9f9;
+    padding-bottom: 20px;
+    
+}
+.name,.email,.message{
+                  padding-bottom: 20px;
+                  padding-left: 20px;
+}
+.message input{
+ padding: 50px;
+}
+
+.addresstitle,.mailus,.telephone{
+    font-size: 30px;
+}
+.mailus i,.addresstitle i,.telephone i{
+    color: var(--secondary-color);
+}
+@media (max-width: 375px) {
+  .contact {
+    padding: 30px 15px;
+  }
+
+  .getintouch {
+    font-size: 32px;
+    padding-top: 60px;
+  }
+
+  .getintouchdes {
+    font-size: 18px;
+    padding-top: 20px;
+  }
+
+  .call {
+    font-size: 24px;
+  }
+
+  .download button {
+    padding: 12px;
+    font-size: 14px;
+    width: 90%;
+  }
+
+  .maps {
+    padding: 20px 10px;
+  }
+
+  .add {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .address,
+  .address2 {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .name input,
+  .email input,
+  .message input,
+  .submit input {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .message input {
+    padding: 30px;
+  }
+
+  .addresstitle,
+  .mailus,
+  .telephone {
+    font-size: 22px;
+  }
+}
+@media (min-width: 900px) and (max-width: 1100px) {
+  .contact {
+    padding: 60px;
+  }
+
+  .getintouch {
+    font-size: 44px;
+    padding-top: 80px;
+  }
+
+  .getintouchdes {
+    font-size: 22px;
+    padding-top: 40px;
+  }
+
+  .call {
+    font-size: 36px;
+  }
+
+  .download button {
+    padding: 16px 24px;
+    font-size: 16px;
+  }
+
+  .maps {
+    padding: 30px 40px;
+  }
+
+  .add {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .address,
+  .address2 {
+    width: 45%;
+    margin: 20px;
+  }
+
+  .name input,
+  .email input,
+  .message input,
+  .submit input {
+    width: 90%;
+    font-size: 18px;
+  }
+
+  .message input {
+    padding: 40px;
+  }
+
+  .addresstitle,
+  .mailus,
+  .telephone {
+    font-size: 26px;
+  }
+}
