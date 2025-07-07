@@ -395,35 +395,38 @@ font-weight:500;
 footer{
     transform: translatey(-700px);
 
-}
-/* Tablet Devices (like iPad, 600px–900px) */
-@media (max-width: 900px) {
+} 
+@media screen and (max-width: 767px) {
+  /* General Fixes */
   .container {
-    flex-direction: column;
-    padding: 0 15px 30px;
+    flex-direction: column-reverse;
+    padding: 0 15px;
   }
 
   .sidebar {
     width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .product-items-container {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
 
   .product-card {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 100%;
+    height: auto;
   }
 
   .product-image img {
     width: 100%;
-    transform: none;
     max-width: 100%;
+    height: auto;
+    transform: none;
   }
 
+  .product-details {
+    padding: 20px;
+  }
+
+  /* Fix description section layout */
   .description,
   .weight,
   .leaveareply,
@@ -432,71 +435,49 @@ footer{
     transform: none;
     width: 100%;
     margin: 20px auto;
-    padding: 10px;
+    text-align: center;
+  }
+
+  .description {
+    padding: 10px 15px;
   }
 
   .weight {
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     width: 80%;
+    padding: 20px;
   }
 
   .name input,
   .message input {
     width: 100%;
-    margin-bottom: 15px;
-  }
-}
-
-/* Small Devices (like iPhone SE, < 600px) */
-@media (max-width: 600px) {
-  .shop-banner h1 {
-    font-size: 26px;
+    margin: 10px 0;
   }
 
-  .shop-banner p {
-    font-size: 16px;
-  }
-
-  .container {
-    padding: 0 10px 20px;
-  }
-
-  .search-box {
+  .rating {
     flex-direction: column;
+    gap: 20px;
+    padding: 0 10px;
+    margin-right: 0;
   }
 
-  .search-box input,
-  .search-box button {
-    border-radius: 8px;
-    width: 100%;
-    margin: 5px 0;
+  .fresh-fruits-banner {
+    max-width: 100%;
+    margin: 20px auto;
   }
 
-  .product-items-container {
-    grid-template-columns: 1fr;
-  }
-
-  .featured-item {
+  .title {
     flex-direction: column;
-    align-items: flex-start;
+    gap: 10px;
   }
 
-  .fresh-fruits-banner .banner-text p {
-    font-size: 18px;
-  }
-
-  .add-to-cart {
-    flex-direction: column;
-    gap: 8px;
-    padding: 10px;
-    font-size: 14px;
-  }
-
-  .rate,
   .postcomment {
-    font-size: 16px;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .btn button {
+    width: 100%;
   }
 }
-
-
